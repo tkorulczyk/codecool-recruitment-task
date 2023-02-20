@@ -2,6 +2,7 @@ from glob import glob
 from collections import defaultdict
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -59,6 +60,20 @@ X_test[X_test['wavelength']==X_train.iloc[1]['wavelength']].sort_values('sensor'
 lin_reg = LinearRegression()
 lin_reg.fit(X_train, y_train)
 
+
+#################################################################
+import statsmodels.api as sm
+
+# fit the regression model
+
+# print(df_air['air_amplitude'])
+# print(df_water['water_amplitude'])
+
+# X_train = X_train.values.reshape(-1,1)
+# df_air = df_air.values.reshape(-1,1)
+#
+# reg = sm.OLS(df_air['air_amplitude'], X_train).fit()
+# print(reg.summary())
 
 pd.DataFrame(zip(X_train.columns, lin_reg.coef_[0]))
 pd.DataFrame(zip(X_train.columns, lin_reg.coef_[1]))
