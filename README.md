@@ -5,37 +5,38 @@ This script came into fruition as a pivotal recruitment qualifier for Coolcode U
 
 Upon meticulous validation of data integrity, the dataset was strategically partitioned into training and testing segments. The results for the Linear Regression during training were as follows:
 
-R2: 0.87704
-R2 Adjusted: 0.87702
-MSE: 5.67981
-RMSE: 2.38324
-MAE: 1.90228
-MAPE: 135.65054
-sMAPE: 47.31598
-AIC: 219001.72665
-BIC: 219025.98508
-The corresponding test statistics for Linear Regression were:
+**Training - Linear Regression:**
+- R2: 0.87704
+- R2 Adjusted: 0.87702
+- MSE: 5.67981
+- RMSE: 2.38324
+- MAE: 1.90228
+- MAPE: 135.65054
+- sMAPE: 47.31598
+- AIC: 219001.72665
+- BIC: 219025.98508
 
-R2: 0.87992
-R2 Adjusted: 0.87986
-MSE: 5.50579
-RMSE: 2.34644
-MAE: 1.87831
-MAPE: 208.40155
-sMAPE: 46.19237
-AIC: 54388.95469
-BIC: 54409.05423
-The script also incorporated a Polynomial Regression model, and its testing results were:
+**Test - Linear Regression:**
+- R2: 0.87992
+- R2 Adjusted: 0.87986
+- MSE: 5.50579
+- RMSE: 2.34644
+- MAE: 1.87831
+- MAPE: 208.40155
+- sMAPE: 46.19237
+- AIC: 54388.95469
+- BIC: 54409.05423
 
-R2: 0.96691
-R2 Adjusted: 0.96689
-MSE: 1.52321
-RMSE: 1.23418
-MAE: 0.97769
-MAPE: 76.27707
-sMAPE: 26.54695
-AIC: 38801.09511
-BIC: 38821.19465
+**Test - Polynomial Regression:**
+- R2: 0.96691
+- R2 Adjusted: 0.96689
+- MSE: 1.52321
+- RMSE: 1.23418
+- MAE: 0.97769
+- MAPE: 76.27707
+- sMAPE: 26.54695
+- AIC: 38801.09511
+
 Despite the robustness of air as a predictor in the linear model, certain anomalies were discerned in the outcomes. This necessitates further exploration into non-linear regression paradigms to unearth potential avenues for model enhancement. The Polynomial Regression showed a significant improvement, especially in the R2 value, indicating a stronger fit to the data.
 
 ## About the Application
